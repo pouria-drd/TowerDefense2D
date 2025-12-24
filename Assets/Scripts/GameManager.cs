@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
 
     private int _lives = 5;
     private int _resources = 175;
+    public int Lives => _lives;
     public int Resources => _resources;
 
     private float _gameSpeed = 1f;
@@ -104,8 +105,7 @@ public class GameManager : MonoBehaviour
         {
             AudioManager.Instance.PlayMusic(AudioManager.Instance.mainMenuMusic);
         }
-
-        if (LevelManager.Instance != null && LevelManager.Instance.CurrentLevel != null)
+        else if (LevelManager.Instance != null && LevelManager.Instance.CurrentLevel != null)
         {
             ResetGameState();
             AudioManager.Instance.PlayMusic(AudioManager.Instance.gameplayMusic);
