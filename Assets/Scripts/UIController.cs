@@ -355,7 +355,6 @@ public class UIController : MonoBehaviour
         int nextIndex = currentIndex + 1;
         if (nextIndex < levelManager.allLevels.Length)
         {
-            missionCompletePanel.SetActive(false);
             levelManager.LoadLevel(levelManager.allLevels[nextIndex]);
         }
     }

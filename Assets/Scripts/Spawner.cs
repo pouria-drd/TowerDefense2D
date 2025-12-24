@@ -73,12 +73,6 @@ public class Spawner : MonoBehaviour
             _waveCooldown -= Time.deltaTime;
             if (_waveCooldown <= 0f)
             {
-                if (_waveCounter + 1 >= LevelManager.Instance.CurrentLevel.wavesToWin && !_isEndlessMode)
-                {
-                    OnMissionComplete?.Invoke();
-                    return;
-                }
-
                 _currentWaveIndex = (_currentWaveIndex + 1) % waves.Length;
                 _waveCounter++;
                 OnWaveChanged?.Invoke(_waveCounter);
@@ -100,8 +94,15 @@ public class Spawner : MonoBehaviour
             }
             else if (_spawnCounter >= CurrentWave.enemiesPerWave && _enemiesRemoved >= CurrentWave.enemiesPerWave)
             {
-                _isBetweenWaves = true;
-                _waveCooldown = _timeBetweenWaves;
+                if (_waveCounter + 1 >= LevelManager.Instance.CurrentLevel.wavesToWin && !_isEndlessMode)
+                {
+                    OnMissionComplete?.Invoke();
+                }
+                else
+                {
+                    _isBetweenWaves = true;
+                    _waveCooldown = _timeBetweenWaves;
+                }
             }
         }
     }

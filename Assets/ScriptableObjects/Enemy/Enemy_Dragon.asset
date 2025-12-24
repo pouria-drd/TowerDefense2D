@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives: 2
   damage: 1
-  speed: 3
+  minSpeed: 1.5
+  maxSpeed: 2
   resourceReward: 2

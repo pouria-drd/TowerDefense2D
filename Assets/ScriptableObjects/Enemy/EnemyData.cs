@@ -5,6 +5,7 @@ public class EnemyData : ScriptableObject
 {
     public float lives;
     public int damage;
-    public float speed;
+    public float minSpeed;
+    public float maxSpeed;
     public float resourceReward;
 }

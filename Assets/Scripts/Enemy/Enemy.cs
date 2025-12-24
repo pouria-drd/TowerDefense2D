@@ -10,11 +10,13 @@ public class Enemy : MonoBehaviour
     public static event Action<Enemy> OnEnemyDestroyed;
 
     private Path _currentPath;
-
-    private Vector3 _targetPosition;
+    private Vector3 _targetPosition;   
     private int _currentWaypoint;
+    private Vector3 _offset;
+
     private float _lives;
     private float _maxLives;
+    private float speed;
 
     [SerializeField] private Transform healthBar;
     private Vector3 _healthBarOriginalScale;
@@ -30,7 +32,7 @@ public class Enemy : MonoBehaviour
     private void OnEnable()
     {
         _currentWaypoint = 0;
-        _targetPosition = _currentPath.GetPosition(_currentWaypoint);
+        _targetPosition = _currentPath.GetPosition(_currentWaypoint) + _offset;
     }
 
     void Update()
@@ -38,7 +40,7 @@ public class Enemy : MonoBehaviour
         if (_hasBeenCounted) return;
 
         // move towards target position
-        transform.position = Vector3.MoveTowards(transform.position, _targetPosition, data.speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, _targetPosition, speed * Time.deltaTime);
 
         // when target reached, set new target position
         float relativeDistance = (transform.position - _targetPosition).magnitude;
@@ -47,7 +49,7 @@ public class Enemy : MonoBehaviour
             if (_currentWaypoint < _currentPath.Waypoints.Length - 1)
             {
                 _currentWaypoint++;
-                _targetPosition = _currentPath.GetPosition(_currentWaypoint);
+                _targetPosition = _currentPath.GetPosition(_currentWaypoint) + _offset;
             }
             else // reached last waypoint
             {
@@ -89,5 +91,10 @@ public class Enemy : MonoBehaviour
         _maxLives = data.lives * healthMultiplier;
         _lives = _maxLives;
         UpdateHealthBar();
+        speed = UnityEngine.Random.Range(data.minSpeed, data.maxSpeed);
+
+        float offsetX = UnityEngine.Random.Range(-0.5f, 0.5f);
+        float offsetY = UnityEngine.Random.Range(-0.5f, 0.5f);
+        _offset = new Vector2(offsetX, offsetY);
     }
 }
