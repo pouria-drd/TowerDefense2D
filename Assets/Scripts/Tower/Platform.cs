@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class Platform : MonoBehaviour
@@ -10,7 +11,7 @@ public class Platform : MonoBehaviour
 
     private void Update()
     {
-        if (towerPanelOpen || Time.timeScale == 0f)
+        if (towerPanelOpen || Time.timeScale == 0f || EventSystem.current.IsPointerOverGameObject())
             return;
 
         bool mousePressed = Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame;
