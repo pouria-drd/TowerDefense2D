@@ -7,7 +7,7 @@ public class ObjectPooler : MonoBehaviour
     [SerializeField] private int poolSize = 5;
     private List<GameObject> _pool;
 
-    void Start()
+    void Awake()
     {
         // create pool
         _pool = new List<GameObject>();
@@ -35,6 +35,14 @@ public class ObjectPooler : MonoBehaviour
             }
         }
         return CreateNewObject();
+    }
+
+    public void ResetPool()
+    {
+        foreach (GameObject obj in _pool)
+        {
+            obj.SetActive(false);
+        }
     }
 
 }

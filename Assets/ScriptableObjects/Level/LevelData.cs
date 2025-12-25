@@ -8,5 +8,7 @@ public class LevelData : ScriptableObject
     public int startingResources;
     public int startingLives;
 
+    public Vector2 initialSpawnPosition;
+
     //public AudioClip backgroundMusic;
 }
