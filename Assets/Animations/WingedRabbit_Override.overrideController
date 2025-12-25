@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WingedRabbit_Override
+  m_Controller: {fileID: 9100000, guid: 8344e1b63b376344684819206b0602df, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: b27a79863ada0bd40800cf5163dabe10, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: e60e2e235f072d3439ca9794abd98f6d, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 8a66e14dc6164cc47bf7425ee453cbef, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 870aea0c0b21c3b4b81e89fa20dcd918, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a478a8651189ed04f8d7d57c53b26b8f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3f3d1579fb53bc34b83807149d887a2b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: aa327e61acc97674dbbf18d83f62f32a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c8548d4c23d60bd42885d9b894e4e5be, type: 2}

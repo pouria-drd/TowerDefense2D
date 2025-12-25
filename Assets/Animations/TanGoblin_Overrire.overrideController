@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: TanGoblin_Overrire
+  m_Controller: {fileID: 9100000, guid: 8344e1b63b376344684819206b0602df, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 8a66e14dc6164cc47bf7425ee453cbef, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 43d58f46fbd0918438e03b3c1f0cbcfa, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b27a79863ada0bd40800cf5163dabe10, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 339f151d037dfc141b1b7e2578e54cc3, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a478a8651189ed04f8d7d57c53b26b8f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 6266dfc8dfd352044be4f5f76ab60e3e, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: aa327e61acc97674dbbf18d83f62f32a, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: fac84845148f9844c869465eaa6ea62a, type: 2}
