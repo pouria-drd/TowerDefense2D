@@ -6097,10 +6097,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cd50bf46cbc0147ab70c6d15cd70a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waves:
-  - {fileID: 11400000, guid: 86d72d5af91bae34894080500ea9332b, type: 2}
-  - {fileID: 11400000, guid: 127a4177cc6bd0b4893a5c3db66db93b, type: 2}
-  - {fileID: 11400000, guid: 57efd5e54a0df9b4288adbe274389154, type: 2}
   orcPool: {fileID: 1985934181}
   dragonPool: {fileID: 462741117}
   kaijuPool: {fileID: 1052898404}

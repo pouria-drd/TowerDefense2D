@@ -10,10 +10,10 @@ public class Spawner : MonoBehaviour
     public static event Action<int> OnWaveChanged;
     public static event Action OnMissionComplete;
 
-    [SerializeField] private WaveData[] waves;
+    private WaveData[] _waves => LevelManager.Instance.CurrentLevel.waves;
     private int _currentWaveIndex = 0;
     private int _waveCounter = 0;
-    private WaveData CurrentWave => waves[_currentWaveIndex];
+    private WaveData CurrentWave => _waves[_currentWaveIndex];
 
     private float _spawnTimer;
     private float _spawnCounter;
@@ -81,7 +81,7 @@ public class Spawner : MonoBehaviour
             _waveCooldown -= Time.deltaTime;
             if (_waveCooldown <= 0f)
             {
-                _currentWaveIndex = (_currentWaveIndex + 1) % waves.Length;
+                _currentWaveIndex = (_currentWaveIndex + 1) % _waves.Length;
                 _waveCounter++;
                 OnWaveChanged?.Invoke(_waveCounter);
                 AudioManager.Instance.PlaySound(CurrentWave.waveSpawnClip);
@@ -165,10 +165,12 @@ public class Spawner : MonoBehaviour
     {
         _currentWaveIndex = 0;
         _waveCounter = 0;
+        OnWaveChanged?.Invoke(_waveCounter);
         _spawnCounter = 0;
         _enemiesRemoved = 0;
         _spawnTimer = 0f;
         _isBetweenWaves = false;
+        _isEndlessMode = false;
 
         foreach (var pool in _poolDictionary.Values)
         {

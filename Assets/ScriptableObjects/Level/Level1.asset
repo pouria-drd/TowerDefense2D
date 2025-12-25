@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Level1
   m_EditorClassIdentifier: 
   levelName: Level1
-  wavesToWin: 1
+  wavesToWin: 2
   startingResources: 300
   startingLives: 10
   initialSpawnPosition: {x: -7, y: 6}
+  waves:
+  - {fileID: 11400000, guid: 127a4177cc6bd0b4893a5c3db66db93b, type: 2}
+  - {fileID: 11400000, guid: 86d72d5af91bae34894080500ea9332b, type: 2}
