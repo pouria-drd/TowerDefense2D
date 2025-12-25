@@ -93,11 +93,11 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 1426059089
-  m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingLayerID: 1877490079
+  m_SortingLayer: 4
+  m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6934368480270860225, guid: 81e1e8b1252786549a7535e483849864, type: 3}
+  m_Sprite: {fileID: 1704872509302500955, guid: 7bfe6a25fb4acce4c80306cfa19976bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,7 +106,7 @@ SpriteRenderer:
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!58 &8329585645571011165
 CircleCollider2D:
   m_ObjectHideFlags: 0
