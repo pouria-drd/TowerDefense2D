@@ -10,7 +10,7 @@ public class Enemy : MonoBehaviour
     public static event Action<Enemy> OnEnemyDestroyed;
 
     private Path _currentPath;
-    private Vector3 _targetPosition;
+    private Vector3 _targetPosition;   
     private int _currentWaypoint;
     private Vector3 _offset;
 

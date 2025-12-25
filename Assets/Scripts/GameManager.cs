@@ -10,8 +10,8 @@ public class GameManager : MonoBehaviour
     public static event Action<int> OnResourcesChanged;
 
     private int _lives = 5;
-    private int _resources = 175;
     public int Lives => _lives;
+    private int _resources = 175;
     public int Resources => _resources;
 
     private float _gameSpeed = 1f;

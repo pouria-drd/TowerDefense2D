@@ -82,18 +82,15 @@ public class UIController : MonoBehaviour
 
     private void Start()
     {
-        speed1Button.onClick.AddListener(() =>
-        {
+        speed1Button.onClick.AddListener(() => {
             SetGameSpeed(0.2f);
             AudioManager.Instance.PlaySpeedSlow();
         });
-        speed2Button.onClick.AddListener(() =>
-        {
+        speed2Button.onClick.AddListener(() => {
             SetGameSpeed(1f);
             AudioManager.Instance.PlaySpeedNormal();
         });
-        speed3Button.onClick.AddListener(() =>
-        {
+        speed3Button.onClick.AddListener(() => {
             SetGameSpeed(2f);
             AudioManager.Instance.PlaySpeedFast();
         });
