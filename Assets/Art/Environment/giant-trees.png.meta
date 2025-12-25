@@ -1,0 +1,925 @@
+fileFormatVersion: 2
+guid: 0c828e87cc077ba47a10ab9b9f2fa634
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 338298268929943970
+    second: giant-trees_0
+  - first:
+      213: -5414608629244851063
+    second: giant-trees_1
+  - first:
+      213: 8357162756474804927
+    second: giant-trees_2
+  - first:
+      213: 7500459671391345102
+    second: giant-trees_3
+  - first:
+      213: 4478231684520816408
+    second: giant-trees_4
+  - first:
+      213: -5430418171321074561
+    second: giant-trees_5
+  - first:
+      213: 910215214467615724
+    second: giant-trees_6
+  - first:
+      213: 164578186754844084
+    second: giant-trees_7
+  - first:
+      213: 8603013264226953616
+    second: giant-trees_8
+  - first:
+      213: -8788580015275475288
+    second: giant-trees_9
+  - first:
+      213: 9222810995876474645
+    second: giant-trees_10
+  - first:
+      213: 7779620458224545101
+    second: giant-trees_11
+  - first:
+      213: -3565317688849954196
+    second: giant-trees_12
+  - first:
+      213: -4014507230727204006
+    second: giant-trees_13
+  - first:
+      213: 8159071662495131677
+    second: giant-trees_14
+  - first:
+      213: 1802557775249373650
+    second: giant-trees_15
+  - first:
+      213: -6138744548330891909
+    second: giant-trees_16
+  - first:
+      213: 970440296748175940
+    second: giant-trees_17
+  - first:
+      213: -4089121456319734526
+    second: giant-trees_18
+  - first:
+      213: -1158220008304376013
+    second: giant-trees_19
+  - first:
+      213: -1071876547707363374
+    second: giant-trees_20
+  - first:
+      213: 8556715770683222706
+    second: giant-trees_21
+  - first:
+      213: -8687638875237725674
+    second: giant-trees_22
+  - first:
+      213: 8831923001393703476
+    second: giant-trees_23
+  - first:
+      213: -3544877248867613611
+    second: giant-trees_24
+  - first:
+      213: -2462086491982881050
+    second: giant-trees_25
+  - first:
+      213: -8056850000285593681
+    second: giant-trees_26
+  - first:
+      213: 329414342828987979
+    second: giant-trees_27
+  - first:
+      213: 9101817086924877966
+    second: giant-trees_28
+  - first:
+      213: -5103324475391439126
+    second: giant-trees_29
+  - first:
+      213: -5130882703589566946
+    second: giant-trees_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: giant-trees_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 608
+        width: 160
+        height: 384
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a9e2b3bb70e1b400800000000000000
+      internalID: 338298268929943970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 768
+        width: 215
+        height: 224
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c8818b3227bd4b0800000000000000
+      internalID: -5414608629244851063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_2
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 931
+        width: 250
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba1ec5bf3b9af370800000000000000
+      internalID: 8357162756474804927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_3
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 768
+        width: 147
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec99c6df45cf61860800000000000000
+      internalID: 7500459671391345102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_4
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 870
+        width: 188
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f23c98dffd52e30800000000000000
+      internalID: 4478231684520816408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_5
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 704
+        width: 199
+        height: 96
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7cb49cd17743a4b0800000000000000
+      internalID: -5430418171321074561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_6
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 768
+        width: 146
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb8f7f3aebb1ac00800000000000000
+      internalID: 910215214467615724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_7
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 582
+        width: 251
+        height: 154
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b5ec472df2b84200800000000000000
+      internalID: 164578186754844084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 594
+        width: 192
+        height: 142
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 099a83cabfa046770800000000000000
+      internalID: 8603013264226953616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_9
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 642
+        width: 128
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae786d3a01b80680800000000000000
+      internalID: -8788580015275475288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_10
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 578
+        width: 128
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51fa8c77cb10eff70800000000000000
+      internalID: 9222810995876474645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 192
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4de5dba693c6fb60800000000000000
+      internalID: 7779620458224545101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_12
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 480
+        width: 64
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a8eaca372758ec0800000000000000
+      internalID: -3565317688849954196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_13
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 533
+        width: 64
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a53944481fa9948c0800000000000000
+      internalID: -4014507230727204006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_14
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 487
+        width: 342
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d186afbc278da3170800000000000000
+      internalID: 8159071662495131677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_15
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 526
+        width: 144
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d97bd80fb8f30910800000000000000
+      internalID: 1802557775249373650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_16
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 417
+        width: 119
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b751fd59b5ccecaa0800000000000000
+      internalID: -6138744548330891909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_17
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 464
+        width: 96
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 442566bee42b77d00800000000000000
+      internalID: 970440296748175940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_18
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 391
+        width: 342
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20d52a853b58047c0800000000000000
+      internalID: -4089121456319734526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_19
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 462
+        width: 148
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3378449f90d2defe0800000000000000
+      internalID: -1158220008304376013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 388
+        width: 128
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2df94da75fdef11f0800000000000000
+      internalID: -1071876547707363374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 421
+        width: 96
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba6e8378af8fb670800000000000000
+      internalID: 8556715770683222706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_22
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 383
+        width: 128
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ac498d87e4f6780800000000000000
+      internalID: -8687638875237725674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_23
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 32
+        width: 367
+        height: 308
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43a6cad1d2b419a70800000000000000
+      internalID: 8831923001393703476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_24
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 32
+        width: 347
+        height: 355
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 554c1e87ce01ecec0800000000000000
+      internalID: -3544877248867613611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_25
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 160
+        width: 95
+        height: 173
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee92175169e4ddd0800000000000000
+      internalID: -2462086491982881050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_26
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 171
+        width: 80
+        height: 162
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf0f5c9c91503090800000000000000
+      internalID: -8056850000285593681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_27
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 171
+        width: 80
+        height: 162
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b469d387990529400800000000000000
+      internalID: 329414342828987979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_28
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 35
+        width: 160
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e80fcb4ca66205e70800000000000000
+      internalID: 9101817086924877966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_29
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 0
+        width: 49
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee8cbe9d695d29b0800000000000000
+      internalID: -5103324475391439126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-trees_30
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 7
+        width: 35
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e16195c9d517bc8b0800000000000000
+      internalID: -5130882703589566946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e1e1bbe77d2c9c54c838660c21ea5398
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      giant-trees_0: 338298268929943970
+      giant-trees_1: -5414608629244851063
+      giant-trees_10: 9222810995876474645
+      giant-trees_11: 7779620458224545101
+      giant-trees_12: -3565317688849954196
+      giant-trees_13: -4014507230727204006
+      giant-trees_14: 8159071662495131677
+      giant-trees_15: 1802557775249373650
+      giant-trees_16: -6138744548330891909
+      giant-trees_17: 970440296748175940
+      giant-trees_18: -4089121456319734526
+      giant-trees_19: -1158220008304376013
+      giant-trees_2: 8357162756474804927
+      giant-trees_20: -1071876547707363374
+      giant-trees_21: 8556715770683222706
+      giant-trees_22: -8687638875237725674
+      giant-trees_23: 8831923001393703476
+      giant-trees_24: -3544877248867613611
+      giant-trees_25: -2462086491982881050
+      giant-trees_26: -8056850000285593681
+      giant-trees_27: 329414342828987979
+      giant-trees_28: 9101817086924877966
+      giant-trees_29: -5103324475391439126
+      giant-trees_3: 7500459671391345102
+      giant-trees_30: -5130882703589566946
+      giant-trees_4: 4478231684520816408
+      giant-trees_5: -5430418171321074561
+      giant-trees_6: 910215214467615724
+      giant-trees_7: 164578186754844084
+      giant-trees_8: 8603013264226953616
+      giant-trees_9: -8788580015275475288
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

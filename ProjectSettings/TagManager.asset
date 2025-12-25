@@ -51,6 +51,9 @@ TagManager:
   - name: Enemies
     uniqueID: 1154829281
     locked: 0
+  - name: SortedObjects
+    uniqueID: 1877490079
+    locked: 0
   - name: UI
     uniqueID: 4021186531
     locked: 0

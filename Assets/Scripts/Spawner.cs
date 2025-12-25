@@ -27,7 +27,6 @@ public class Spawner : MonoBehaviour
     [SerializeField] private ObjectPooler mummyOrcPool;
     [SerializeField] private ObjectPooler wingedRabbitPool;
     [SerializeField] private ObjectPooler vampirePool;
-    [SerializeField] private ObjectPooler tanGoblinPool;
 
 
     private Dictionary<EnemyType, ObjectPooler> _poolDictionary;
@@ -51,8 +50,7 @@ public class Spawner : MonoBehaviour
             { EnemyType.PixieZombie, pixieZombiePool},
             { EnemyType.MummyOrc, mummyOrcPool},
             { EnemyType.WingedRabbit, wingedRabbitPool},
-            { EnemyType.Vampire, vampirePool},
-            { EnemyType.TanGoblin, tanGoblinPool}
+            { EnemyType.Vampire, vampirePool}
         };
 
         if (Instance != null && Instance != this)

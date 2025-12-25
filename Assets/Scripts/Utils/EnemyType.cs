@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public enum EnemyType
 {
     Orc,
@@ -7,6 +9,5 @@ public enum EnemyType
     PixieZombie,
     MummyOrc,
     WingedRabbit,
-    Vampire,
-    TanGoblin
+    Vampire
 }
