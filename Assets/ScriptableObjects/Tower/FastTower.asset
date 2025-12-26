@@ -19,6 +19,6 @@ MonoBehaviour:
   projectileSize: 1
   damage: 1
   cost: 50
-  sprite: {fileID: 7538528287983206177, guid: 81e1e8b1252786549a7535e483849864, type: 3}
+  sprite: {fileID: -1515134823594722529, guid: 7bfe6a25fb4acce4c80306cfa19976bc, type: 3}
   prefab: {fileID: 1838302079820638416, guid: d905ea5805a973340bdf028b4a02f047, type: 3}
   attackSound: {fileID: 8300000, guid: 22ae70a426efd3d46ace9dde4c0327d5, type: 3}

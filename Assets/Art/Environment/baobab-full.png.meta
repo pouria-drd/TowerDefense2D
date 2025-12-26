@@ -1,37 +1,22 @@
 fileFormatVersion: 2
-guid: fbd4fa26bd9af144fb07a916bc838757
+guid: 52131f8993785054f9ef7abb7157eebc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4260333206056500029
-    second: viney-trees_0
+      213: -6897206044286970549
+    second: baobab-full_0
   - first:
-      213: 134343752646867904
-    second: viney-trees_1
+      213: -6063225530155375474
+    second: baobab-full_1
   - first:
-      213: -4588636409330156385
-    second: viney-trees_2
+      213: -8875051185628849521
+    second: baobab-full_2
   - first:
-      213: 6561294655206106509
-    second: viney-trees_3
+      213: 7785305998565886640
+    second: baobab-full_3
   - first:
-      213: -1746121933083495763
-    second: viney-trees_4
-  - first:
-      213: -6697387886058046983
-    second: viney-trees_5
-  - first:
-      213: 3792770416568984017
-    second: viney-trees_6
-  - first:
-      213: 1671008645834413174
-    second: viney-trees_7
-  - first:
-      213: 261343959698439779
-    second: viney-trees_8
-  - first:
-      213: 8499934519418871789
-    second: viney-trees_9
+      213: 3073765646252275619
+    second: baobab-full_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -127,56 +112,78 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: viney-trees_0
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 775
-        width: 80
-        height: 104
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d3b7ccb8a7ebf1b30800000000000000
-      internalID: 4260333206056500029
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: viney-trees_1
-      rect:
-        serializedVersion: 2
-        x: 107
-        y: 772
-        width: 107
-        height: 103
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0cb3f466ee84dd100800000000000000
-      internalID: 134343752646867904
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: viney-trees_2
+      name: baobab-full_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 519
-        width: 127
+        y: 256
+        width: 95
+        height: 122
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45199b45a33840a0800000000000000
+      internalID: -6897206044286970549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baobab-full_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 256
+        width: 97
+        height: 127
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e84620231881bdba0800000000000000
+      internalID: -6063225530155375474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baobab-full_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 97
+        width: 95
+        height: 154
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ade2df7fb75d480800000000000000
+      internalID: -8875051185628849521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: baobab-full_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 82
+        width: 128
         height: 142
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -186,64 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f9cb3725f73e150c0800000000000000
-      internalID: -4588636409330156385
+      spriteID: 0bacc30be86fa0c60800000000000000
+      internalID: 7785305998565886640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: viney-trees_3
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 512
-        width: 96
-        height: 149
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d85aa36c9b66e0b50800000000000000
-      internalID: 6561294655206106509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: viney-trees_4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 266
-        width: 162
-        height: 245
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: da23a0c6a5784c7e0800000000000000
-      internalID: -1746121933083495763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: viney-trees_5
+      name: baobab-full_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 265
-        width: 128
-        height: 208
+        y: 32
+        width: 94
+        height: 59
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -252,96 +215,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9f97180b3391e03a0800000000000000
-      internalID: -6697387886058046983
+      spriteID: 3a77aabd19538aa20800000000000000
+      internalID: 3073765646252275619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: viney-trees_6
+      name: baobab-full_5
       rect:
         serializedVersion: 2
-        x: 128
-        y: 256
-        width: 128
-        height: 244
+        x: 95
+        y: 89
+        width: 96
+        height: 160
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1d164325990a2a430800000000000000
-      internalID: 3792770416568984017
+      spriteID: 56cec7850d555b34e89160b729ca73e7
+      internalID: -1324118523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: viney-trees_7
+      name: baobab-full_6
       rect:
         serializedVersion: 2
-        x: 432
-        y: 267
-        width: 173
-        height: 229
+        x: 193
+        y: 254
+        width: 95
+        height: 124
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 674119f828d903710800000000000000
-      internalID: 1671008645834413174
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: viney-trees_8
-      rect:
-        serializedVersion: 2
-        x: 608
-        y: 259
-        width: 192
-        height: 253
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 36ef40a52fa70a300800000000000000
-      internalID: 261343959698439779
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: viney-trees_9
-      rect:
-        serializedVersion: 2
-        x: 803
-        y: 255
-        width: 213
-        height: 238
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: defda0c2965d5f570800000000000000
-      internalID: 8499934519418871789
+      spriteID: 5308aac1fe7811149891f1b5e6bf5506
+      internalID: -265729427
       vertices: []
       indices: 
       edges: []
@@ -350,7 +269,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 08467626ffa0d1a4682f8ef6de989572
+    spriteID: dd51a6fea3e1a1645a61fe4b648a6af0
     internalID: 0
     vertices: []
     indices: 
@@ -362,16 +281,13 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      viney-trees_0: 4260333206056500029
-      viney-trees_1: 134343752646867904
-      viney-trees_2: -4588636409330156385
-      viney-trees_3: 6561294655206106509
-      viney-trees_4: -1746121933083495763
-      viney-trees_5: -6697387886058046983
-      viney-trees_6: 3792770416568984017
-      viney-trees_7: 1671008645834413174
-      viney-trees_8: 261343959698439779
-      viney-trees_9: 8499934519418871789
+      baobab-full_0: -6897206044286970549
+      baobab-full_1: -6063225530155375474
+      baobab-full_2: -8875051185628849521
+      baobab-full_3: 7785305998565886640
+      baobab-full_4: 3073765646252275619
+      baobab-full_5: -1324118523
+      baobab-full_6: -265729427
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

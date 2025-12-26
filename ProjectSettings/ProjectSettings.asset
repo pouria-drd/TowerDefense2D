@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DRD Games
   productName: Tower Defenders 2D
-  defaultCursor: {fileID: 2800000, guid: 7709d8099769da045acec5e5935ab05f, type: 3}
+  defaultCursor: {fileID: 2800000, guid: 68f8287b4d882004c972a623c9c5b5c5, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_ShowUnitySplashScreen: 1
