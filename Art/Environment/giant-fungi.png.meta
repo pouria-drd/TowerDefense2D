@@ -1,0 +1,1497 @@
+fileFormatVersion: 2
+guid: 3a4538d5904a659439ff8021786a7f97
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3150434412598267325
+    second: giant-fungi_0
+  - first:
+      213: -4307594870495190812
+    second: giant-fungi_1
+  - first:
+      213: -7292118359085241151
+    second: giant-fungi_2
+  - first:
+      213: 2311980926990972730
+    second: giant-fungi_3
+  - first:
+      213: -3880644624234373853
+    second: giant-fungi_4
+  - first:
+      213: -826927101966636284
+    second: giant-fungi_5
+  - first:
+      213: 3593234419575785623
+    second: giant-fungi_6
+  - first:
+      213: -7380812784681369116
+    second: giant-fungi_7
+  - first:
+      213: 3771567990549733444
+    second: giant-fungi_8
+  - first:
+      213: 8021936724938305142
+    second: giant-fungi_9
+  - first:
+      213: 7410232937984013220
+    second: giant-fungi_10
+  - first:
+      213: -1018565563891839745
+    second: giant-fungi_11
+  - first:
+      213: 2266948208452524412
+    second: giant-fungi_12
+  - first:
+      213: -337898989643502997
+    second: giant-fungi_13
+  - first:
+      213: -5400931427981135616
+    second: giant-fungi_14
+  - first:
+      213: -3695008136840320281
+    second: giant-fungi_15
+  - first:
+      213: 726890251534397162
+    second: giant-fungi_16
+  - first:
+      213: -496914060009196672
+    second: giant-fungi_17
+  - first:
+      213: -2817355729738605705
+    second: giant-fungi_18
+  - first:
+      213: -4486971581532322727
+    second: giant-fungi_19
+  - first:
+      213: 1833047900450987959
+    second: giant-fungi_20
+  - first:
+      213: -6334089212518327232
+    second: giant-fungi_21
+  - first:
+      213: 7440154042459994632
+    second: giant-fungi_22
+  - first:
+      213: -378366929112613883
+    second: giant-fungi_23
+  - first:
+      213: 6507925611728100588
+    second: giant-fungi_24
+  - first:
+      213: -1323587504528740281
+    second: giant-fungi_25
+  - first:
+      213: -5076864733359706540
+    second: giant-fungi_26
+  - first:
+      213: -7890824993126469856
+    second: giant-fungi_27
+  - first:
+      213: 9178557826471020263
+    second: giant-fungi_28
+  - first:
+      213: -7316110858213393455
+    second: giant-fungi_29
+  - first:
+      213: 5407637191816393449
+    second: giant-fungi_30
+  - first:
+      213: -5520189160764109297
+    second: giant-fungi_31
+  - first:
+      213: -5458282565209509980
+    second: giant-fungi_32
+  - first:
+      213: 7553179158963396863
+    second: giant-fungi_33
+  - first:
+      213: -7238071928316118613
+    second: giant-fungi_34
+  - first:
+      213: 5468245625306343199
+    second: giant-fungi_35
+  - first:
+      213: -5075732335626557207
+    second: giant-fungi_36
+  - first:
+      213: 3212710073908255740
+    second: giant-fungi_37
+  - first:
+      213: 3183955159771490825
+    second: giant-fungi_38
+  - first:
+      213: 5591590976259652107
+    second: giant-fungi_39
+  - first:
+      213: -380016692095166055
+    second: giant-fungi_40
+  - first:
+      213: 8227163040996712190
+    second: giant-fungi_41
+  - first:
+      213: 947075416864962631
+    second: giant-fungi_42
+  - first:
+      213: -1339927438141718373
+    second: giant-fungi_43
+  - first:
+      213: -6739317812348191073
+    second: giant-fungi_44
+  - first:
+      213: 4643328441904618261
+    second: giant-fungi_45
+  - first:
+      213: 7263083656511564753
+    second: giant-fungi_46
+  - first:
+      213: -579505787611853894
+    second: giant-fungi_47
+  - first:
+      213: 6045882897092602182
+    second: giant-fungi_48
+  - first:
+      213: -4432409651516875813
+    second: giant-fungi_49
+  - first:
+      213: 6601110176824404657
+    second: giant-fungi_50
+  - first:
+      213: 2454586518470180132
+    second: giant-fungi_51
+  - first:
+      213: -2211375451689215296
+    second: giant-fungi_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: giant-fungi_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 834
+        width: 53
+        height: 190
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342f9ece7986744d0800000000000000
+      internalID: -3150434412598267325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 838
+        width: 192
+        height: 140
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0e6d3b9495834c0800000000000000
+      internalID: -4307594870495190812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 939
+        width: 56
+        height: 70
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ccae9adcf03dca90800000000000000
+      internalID: -7292118359085241151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 832
+        width: 96
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3776c8576ec51020800000000000000
+      internalID: 2311980926990972730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_4
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 801
+        width: 61
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d1bf8564e252ac0800000000000000
+      internalID: -3880644624234373853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 832
+        width: 55
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ba2289e2a2684f0800000000000000
+      internalID: -826927101966636284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_6
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 835
+        width: 65
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7988585baabbdd130800000000000000
+      internalID: 3593234419575785623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_7
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 837
+        width: 60
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1c767a0e5129990800000000000000
+      internalID: -7380812784681369116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 836
+        width: 54
+        height: 71
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44063f2da1d475430800000000000000
+      internalID: 3771567990549733444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_9
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 833
+        width: 86
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67eab9403f4a35f60800000000000000
+      internalID: 8021936724938305142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_10
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 776
+        width: 92
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3bf63989f66d660800000000000000
+      internalID: 7410232937984013220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_11
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 801
+        width: 52
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc08c724045dd1f0800000000000000
+      internalID: -1018565563891839745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_12
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 715
+        width: 74
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7955018261d57f10800000000000000
+      internalID: 2266948208452524412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_13
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 745
+        width: 54
+        height: 81
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ae550c8aa8f4bf0800000000000000
+      internalID: -337898989643502997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_14
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 768
+        width: 64
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001f0fa4b790c05b0800000000000000
+      internalID: -5400931427981135616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_15
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 736
+        width: 64
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea64713da1b8bcc0800000000000000
+      internalID: -3695008136840320281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_16
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 741
+        width: 64
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeee66125de661a00800000000000000
+      internalID: 726890251534397162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_17
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 717
+        width: 75
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08331419b4b9a19f0800000000000000
+      internalID: -496914060009196672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 717
+        width: 64
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77bd40b04edb6e8d0800000000000000
+      internalID: -2817355729738605705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_19
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 684
+        width: 85
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9544e7d9e131bb1c0800000000000000
+      internalID: -4486971581532322727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_20
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 683
+        width: 42
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf18a28a5b407910800000000000000
+      internalID: 1833047900450987959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_21
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 688
+        width: 49
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c1630bb6bc818a0800000000000000
+      internalID: -6334089212518327232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_22
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 649
+        width: 54
+        height: 81
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80ab3079eacb04760800000000000000
+      internalID: 7440154042459994632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_23
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 616
+        width: 92
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50cbc7b5845cfbaf0800000000000000
+      internalID: -378366929112613883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_24
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 613
+        width: 92
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec58b70ddbc05a50800000000000000
+      internalID: 6507925611728100588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_25
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 620
+        width: 85
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7403b636d2ca1ade0800000000000000
+      internalID: -1323587504528740281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_26
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 631
+        width: 49
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45ee2636c6a5b89b0800000000000000
+      internalID: -5076864733359706540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_27
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 555
+        width: 74
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f2ce3e9782e7290800000000000000
+      internalID: -7890824993126469856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_28
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 554
+        width: 54
+        height: 79
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6cf2d86b9c06f70800000000000000
+      internalID: 9178557826471020263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_29
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 567
+        width: 85
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dbffc6dfe3f77a90800000000000000
+      internalID: -7316110858213393455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_30
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 560
+        width: 50
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e238640069cb0b40800000000000000
+      internalID: 5407637191816393449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_31
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 503
+        width: 85
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e81bb94395463b0800000000000000
+      internalID: -5520189160764109297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_32
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 528
+        width: 49
+        height: 33
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4afaaf81de84044b0800000000000000
+      internalID: -5458282565209509980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_33
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 384
+        width: 59
+        height: 56
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0a5e63d6842d860800000000000000
+      internalID: 7553179158963396863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_34
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 386
+        width: 44
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba9bdfd1ee33d8b90800000000000000
+      internalID: -7238071928316118613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_35
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 392
+        width: 64
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f17e7f89c6c13eb40800000000000000
+      internalID: 5468245625306343199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_36
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 391
+        width: 76
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e8e30845506f89b0800000000000000
+      internalID: -5075732335626557207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_37
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 392
+        width: 38
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfbde916ac6d59c20800000000000000
+      internalID: 3212710073908255740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_38
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 384
+        width: 28
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90aa3f6395eaf2c20800000000000000
+      internalID: 3183955159771490825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_39
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 388
+        width: 19
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a7c3d0e52599d40800000000000000
+      internalID: 5591590976259652107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_40
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 385
+        width: 41
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 999d2faf4d8e9baf0800000000000000
+      internalID: -380016692095166055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_41
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 420
+        width: 10
+        height: 14
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efed4d74231cc2270800000000000000
+      internalID: 8227163040996712190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_42
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 420
+        width: 16
+        height: 19
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 748bdb5e210b42d00800000000000000
+      internalID: 947075416864962631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_43
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 421
+        width: 22
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9083c0281f976de0800000000000000
+      internalID: -1339927438141718373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_44
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 427
+        width: 17
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9ef586f7222972a0800000000000000
+      internalID: -6739317812348191073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_45
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 422
+        width: 8
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51b5133dd9a607040800000000000000
+      internalID: 4643328441904618261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_46
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 419
+        width: 14
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db2158aa18abc460800000000000000
+      internalID: 7263083656511564753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_47
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 398
+        width: 8
+        height: 7
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbcc187e8e25f7f0800000000000000
+      internalID: -579505787611853894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_48
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 388
+        width: 16
+        height: 21
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64960d2667a47e350800000000000000
+      internalID: 6045882897092602182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_49
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 384
+        width: 26
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdbd256e7eaec72c0800000000000000
+      internalID: -4432409651516875813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_50
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 384
+        width: 16
+        height: 35
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1baa5dc4bbadb9b50800000000000000
+      internalID: 6601110176824404657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_51
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 400
+        width: 17
+        height: 11
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42db0effe61701220800000000000000
+      internalID: 2454586518470180132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-fungi_52
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 385
+        width: 15
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca9b093ebd9f41e0800000000000000
+      internalID: -2211375451689215296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5b4d6cf4372591c499229813c1dce820
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      giant-fungi_0: -3150434412598267325
+      giant-fungi_1: -4307594870495190812
+      giant-fungi_10: 7410232937984013220
+      giant-fungi_11: -1018565563891839745
+      giant-fungi_12: 2266948208452524412
+      giant-fungi_13: -337898989643502997
+      giant-fungi_14: -5400931427981135616
+      giant-fungi_15: -3695008136840320281
+      giant-fungi_16: 726890251534397162
+      giant-fungi_17: -496914060009196672
+      giant-fungi_18: -2817355729738605705
+      giant-fungi_19: -4486971581532322727
+      giant-fungi_2: -7292118359085241151
+      giant-fungi_20: 1833047900450987959
+      giant-fungi_21: -6334089212518327232
+      giant-fungi_22: 7440154042459994632
+      giant-fungi_23: -378366929112613883
+      giant-fungi_24: 6507925611728100588
+      giant-fungi_25: -1323587504528740281
+      giant-fungi_26: -5076864733359706540
+      giant-fungi_27: -7890824993126469856
+      giant-fungi_28: 9178557826471020263
+      giant-fungi_29: -7316110858213393455
+      giant-fungi_3: 2311980926990972730
+      giant-fungi_30: 5407637191816393449
+      giant-fungi_31: -5520189160764109297
+      giant-fungi_32: -5458282565209509980
+      giant-fungi_33: 7553179158963396863
+      giant-fungi_34: -7238071928316118613
+      giant-fungi_35: 5468245625306343199
+      giant-fungi_36: -5075732335626557207
+      giant-fungi_37: 3212710073908255740
+      giant-fungi_38: 3183955159771490825
+      giant-fungi_39: 5591590976259652107
+      giant-fungi_4: -3880644624234373853
+      giant-fungi_40: -380016692095166055
+      giant-fungi_41: 8227163040996712190
+      giant-fungi_42: 947075416864962631
+      giant-fungi_43: -1339927438141718373
+      giant-fungi_44: -6739317812348191073
+      giant-fungi_45: 4643328441904618261
+      giant-fungi_46: 7263083656511564753
+      giant-fungi_47: -579505787611853894
+      giant-fungi_48: 6045882897092602182
+      giant-fungi_49: -4432409651516875813
+      giant-fungi_5: -826927101966636284
+      giant-fungi_50: 6601110176824404657
+      giant-fungi_51: 2454586518470180132
+      giant-fungi_52: -2211375451689215296
+      giant-fungi_6: 3593234419575785623
+      giant-fungi_7: -7380812784681369116
+      giant-fungi_8: 3771567990549733444
+      giant-fungi_9: 8021936724938305142
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

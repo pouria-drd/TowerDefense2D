@@ -1,0 +1,1159 @@
+fileFormatVersion: 2
+guid: 4c283098591b187429e6faf53c0fc6a4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1772159878415130942
+    second: giant-plants_0
+  - first:
+      213: -1303463060412455592
+    second: giant-plants_1
+  - first:
+      213: -8069798565154278502
+    second: giant-plants_2
+  - first:
+      213: 4079734407837790676
+    second: giant-plants_3
+  - first:
+      213: 3758581759394306618
+    second: giant-plants_4
+  - first:
+      213: -4698043142244680188
+    second: giant-plants_5
+  - first:
+      213: -275756708075216273
+    second: giant-plants_6
+  - first:
+      213: -7252158609815871761
+    second: giant-plants_7
+  - first:
+      213: -4704674575104298304
+    second: giant-plants_8
+  - first:
+      213: 8262219763048584497
+    second: giant-plants_9
+  - first:
+      213: -2506622405513715890
+    second: giant-plants_10
+  - first:
+      213: 722269995175901493
+    second: giant-plants_11
+  - first:
+      213: 3866858427865888022
+    second: giant-plants_12
+  - first:
+      213: -6571173127585867427
+    second: giant-plants_13
+  - first:
+      213: 1385270660733483026
+    second: giant-plants_14
+  - first:
+      213: 7810342258432657462
+    second: giant-plants_15
+  - first:
+      213: -5498333068033314797
+    second: giant-plants_16
+  - first:
+      213: -8798880947003119359
+    second: giant-plants_17
+  - first:
+      213: 1738317041728266569
+    second: giant-plants_18
+  - first:
+      213: 3786272843201795768
+    second: giant-plants_19
+  - first:
+      213: -4121024930575527371
+    second: giant-plants_20
+  - first:
+      213: -213865305074863996
+    second: giant-plants_21
+  - first:
+      213: 7597387497830749939
+    second: giant-plants_22
+  - first:
+      213: 799033060817598232
+    second: giant-plants_23
+  - first:
+      213: -444344081660747841
+    second: giant-plants_24
+  - first:
+      213: -2842269482033665720
+    second: giant-plants_25
+  - first:
+      213: 8869892878563188971
+    second: giant-plants_26
+  - first:
+      213: -8445945763024104939
+    second: giant-plants_27
+  - first:
+      213: -6759356288235289694
+    second: giant-plants_28
+  - first:
+      213: -23764417409379894
+    second: giant-plants_29
+  - first:
+      213: -7656438432555261713
+    second: giant-plants_30
+  - first:
+      213: -835469838355486658
+    second: giant-plants_31
+  - first:
+      213: -4157134130875754245
+    second: giant-plants_32
+  - first:
+      213: -7743166673565298048
+    second: giant-plants_33
+  - first:
+      213: 823745716285871160
+    second: giant-plants_34
+  - first:
+      213: 7706444963677887420
+    second: giant-plants_35
+  - first:
+      213: -2403912472418694125
+    second: giant-plants_36
+  - first:
+      213: -7181202493760205430
+    second: giant-plants_37
+  - first:
+      213: 1436613038624051139
+    second: giant-plants_38
+  - first:
+      213: -1930815809030055930
+    second: giant-plants_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: giant-plants_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 960
+        width: 45
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ceddd9daf50867e0800000000000000
+      internalID: -1772159878415130942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_1
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 965
+        width: 48
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855a54aa04b29ede0800000000000000
+      internalID: -1303463060412455592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_2
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 974
+        width: 60
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a93b50be5f0520090800000000000000
+      internalID: -8069798565154278502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 966
+        width: 50
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d13c1d14d02e9830800000000000000
+      internalID: 4079734407837790676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 867
+        width: 64
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ad5f3423a292430800000000000000
+      internalID: 3758581759394306618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 867
+        width: 63
+        height: 91
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ebb0747a23dceb0800000000000000
+      internalID: -4698043142244680188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_6
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 865
+        width: 128
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f62eeba2cb05c2cf0800000000000000
+      internalID: -275756708075216273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_7
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 872
+        width: 92
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee522ffa282b5b90800000000000000
+      internalID: -7252158609815871761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_8
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 868
+        width: 78
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c2b81f7663a5beb0800000000000000
+      internalID: -4704674575104298304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_9
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 868
+        width: 64
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13519b0791d49a270800000000000000
+      internalID: 8262219763048584497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 869
+        width: 64
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4fd15de330b63dd0800000000000000
+      internalID: -2506622405513715890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_11
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 868
+        width: 64
+        height: 68
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 539f16edbb4060a00800000000000000
+      internalID: 722269995175901493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_12
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 871
+        width: 63
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 615fbada047d9a530800000000000000
+      internalID: 3866858427865888022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_13
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 866
+        width: 59
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59d6a42bd08ec4a0800000000000000
+      internalID: -6571173127585867427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 806
+        width: 58
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2183ac29358793310800000000000000
+      internalID: 1385270660733483026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 801
+        width: 64
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638c91037e8e36c60800000000000000
+      internalID: 7810342258432657462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_16
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 800
+        width: 128
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310371fb43ff1b3b0800000000000000
+      internalID: -5498333068033314797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_17
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 802
+        width: 59
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1092deca56814e580800000000000000
+      internalID: -8798880947003119359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_18
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 802
+        width: 64
+        height: 42
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941a833b32ebf1810800000000000000
+      internalID: 1738317041728266569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_19
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 774
+        width: 41
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b650c1271b8b8430800000000000000
+      internalID: 3786272843201795768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_20
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 774
+        width: 41
+        height: 64
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5325486e8ad2fc6c0800000000000000
+      internalID: -4121024930575527371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_21
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 743
+        width: 48
+        height: 119
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4807b3d53a2380df0800000000000000
+      internalID: -213865305074863996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 705
+        width: 96
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f612353da75f6960800000000000000
+      internalID: 7597387497830749939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_23
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 705
+        width: 110
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81773d9d55cb61b00800000000000000
+      internalID: 799033060817598232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_24
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 704
+        width: 107
+        height: 95
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbf5096796f55d9f0800000000000000
+      internalID: -444344081660747841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_25
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 738
+        width: 40
+        height: 44
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 849237f07fa3e88d0800000000000000
+      internalID: -2842269482033665720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 546
+        width: 97
+        height: 125
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be0a68e0490381b70800000000000000
+      internalID: 8869892878563188971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_27
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 545
+        width: 82
+        height: 110
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5129bbab319f9ca80800000000000000
+      internalID: -8445945763024104939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_28
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 548
+        width: 64
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a3ce69b441f132a0800000000000000
+      internalID: -6759356288235289694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_29
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 545
+        width: 78
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac1150663629baff0800000000000000
+      internalID: -23764417409379894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_30
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 421
+        width: 83
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe025e6afcddeb590800000000000000
+      internalID: -7656438432555261713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_31
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 289
+        width: 82
+        height: 159
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38a448cb90d764f0800000000000000
+      internalID: -835469838355486658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_32
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 449
+        width: 83
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf89f7d8884ee46c0800000000000000
+      internalID: -4157134130875754245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_33
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 458
+        width: 80
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0825f797feeba8490800000000000000
+      internalID: -7743166673565298048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_34
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 384
+        width: 61
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83418745d588e6b00800000000000000
+      internalID: 823745716285871160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_35
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 436
+        width: 72
+        height: 99
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbb5e1d2ddac2fa60800000000000000
+      internalID: 7706444963677887420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_36
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 291
+        width: 76
+        height: 123
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c4a52c75693aed0800000000000000
+      internalID: -2403912472418694125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_37
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 292
+        width: 67
+        height: 73
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d064b216e375c90800000000000000
+      internalID: -7181202493760205430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_38
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 227
+        width: 87
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cf81e672ffdfe310800000000000000
+      internalID: 1436613038624051139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: giant-plants_39
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 225
+        width: 55
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6081e08604d5435e0800000000000000
+      internalID: -1930815809030055930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1bad2bf9eba72fa49b99a2bdba11c0dc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      giant-plants_0: -1772159878415130942
+      giant-plants_1: -1303463060412455592
+      giant-plants_10: -2506622405513715890
+      giant-plants_11: 722269995175901493
+      giant-plants_12: 3866858427865888022
+      giant-plants_13: -6571173127585867427
+      giant-plants_14: 1385270660733483026
+      giant-plants_15: 7810342258432657462
+      giant-plants_16: -5498333068033314797
+      giant-plants_17: -8798880947003119359
+      giant-plants_18: 1738317041728266569
+      giant-plants_19: 3786272843201795768
+      giant-plants_2: -8069798565154278502
+      giant-plants_20: -4121024930575527371
+      giant-plants_21: -213865305074863996
+      giant-plants_22: 7597387497830749939
+      giant-plants_23: 799033060817598232
+      giant-plants_24: -444344081660747841
+      giant-plants_25: -2842269482033665720
+      giant-plants_26: 8869892878563188971
+      giant-plants_27: -8445945763024104939
+      giant-plants_28: -6759356288235289694
+      giant-plants_29: -23764417409379894
+      giant-plants_3: 4079734407837790676
+      giant-plants_30: -7656438432555261713
+      giant-plants_31: -835469838355486658
+      giant-plants_32: -4157134130875754245
+      giant-plants_33: -7743166673565298048
+      giant-plants_34: 823745716285871160
+      giant-plants_35: 7706444963677887420
+      giant-plants_36: -2403912472418694125
+      giant-plants_37: -7181202493760205430
+      giant-plants_38: 1436613038624051139
+      giant-plants_39: -1930815809030055930
+      giant-plants_4: 3758581759394306618
+      giant-plants_5: -4698043142244680188
+      giant-plants_6: -275756708075216273
+      giant-plants_7: -7252158609815871761
+      giant-plants_8: -4704674575104298304
+      giant-plants_9: 8262219763048584497
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
