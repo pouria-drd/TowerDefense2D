@@ -1,21 +1,21 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
     public static event Action<int> OnLivesChanged;
-    public static event Action<int> OnResourcesChanged;
+    public static event Action<int> OnCoinsChanged;
 
     [SerializeField] private TMP_FontAsset globalFont;
 
     private int _lives = 5;
     public int Lives => _lives;
-    private int _resources = 175;
-    public int Resources => _resources;
+    private int _coins = 175;
+    public int Coins => _coins;
 
     private float _gameSpeed = 1f;
     public float GameSpeed => _gameSpeed;
@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         OnLivesChanged?.Invoke(_lives);
-        OnResourcesChanged?.Invoke(_resources);
+        OnCoinsChanged?.Invoke(_coins);
     }
 
     private void HandleEnemyReachedEnd(EnemyData data)
@@ -63,13 +63,13 @@ public class GameManager : MonoBehaviour
 
     private void HandleEnemyDestroyed(Enemy enemy)
     {
-        AddResources(Mathf.RoundToInt(enemy.Data.resourceReward));
+        AddCoins(Mathf.RoundToInt(enemy.Data.resourceReward));
     }
 
-    private void AddResources(int amount)
+    private void AddCoins(int amount)
     {
-        _resources += amount;
-        OnResourcesChanged?.Invoke(_resources);
+        _coins += amount;
+        OnCoinsChanged?.Invoke(_coins);
     }
 
     // for pausing/unpausing, UI needs
@@ -85,12 +85,12 @@ public class GameManager : MonoBehaviour
         SetTimeScale(_gameSpeed);
     }
 
-    public void SpendResources(int amount)
+    public void SpendCoins(int amount)
     {
-        if (_resources >= amount)
+        if (_coins >= amount)
         {
-            _resources -= amount;
-            OnResourcesChanged?.Invoke(_resources);
+            _coins -= amount;
+            OnCoinsChanged?.Invoke(_coins);
         }
     }
 
@@ -98,8 +98,8 @@ public class GameManager : MonoBehaviour
     {
         _lives = LevelManager.Instance.CurrentLevel.startingLives;
         OnLivesChanged?.Invoke(_lives);
-        _resources = LevelManager.Instance.CurrentLevel.startingResources;
-        OnResourcesChanged?.Invoke(_resources);
+        _coins = LevelManager.Instance.CurrentLevel.startingCoins;
+        OnCoinsChanged?.Invoke(_coins);
 
         SetGameSpeed(1f);
     }

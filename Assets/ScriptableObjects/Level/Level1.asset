@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelName: Level1
   wavesToWin: 2
-  startingResources: 300
+  startingCoins: 300
   startingLives: 10
   initialSpawnPosition: {x: -12, y: 8.5}
   waves:

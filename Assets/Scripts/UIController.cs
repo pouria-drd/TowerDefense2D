@@ -1,30 +1,42 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using System.Collections.Generic;
-using System.Collections;
-using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
-using System;
+using UnityEngine.UI;
 
 public class UIController : MonoBehaviour
 {
     public static UIController Instance { get; private set; }
 
-    [SerializeField] private TMP_Text waveText;
-    [SerializeField] private TMP_Text livesText;
-    [SerializeField] private TMP_Text resourcesText;
-    [SerializeField] private TMP_Text warningText;
+    [Header("HUD")]
+    private TMP_Text _livesText;
+    [SerializeField] private GameObject lives;
 
-    [SerializeField] private GameObject towerPanel;
-    [SerializeField] private GameObject towerCardPrefab;
-    [SerializeField] private Transform cardsContainer;
+    private TMP_Text _coinsText;
+    [SerializeField] private GameObject coins;
 
-    [SerializeField] private TowerData[] towers;
-    private List<GameObject> activeCards = new List<GameObject>();
+    private TMP_Text _waveText;
+    [SerializeField] private GameObject waves;
 
-    private Platform _currentPlatform;
+    private TMP_Text _killsText;
+    [SerializeField] private GameObject kills;
 
+    private TMP_Text _alertText;
+    [SerializeField] private GameObject alert;
+    [SerializeField][Range(1f, 10f)] private float alertDuration = 3f;
+    [Space]
+    [SerializeField] private float alertHiddenY = 120f;   // off-screen / hidden Y
+    [SerializeField] private float alertShownY = -120f;       // visible Y
+    [SerializeField][Range(0.05f, 1f)] private float alertOpenTime = 0.2f;
+    [SerializeField][Range(0.05f, 1f)] private float alertCloseTime = 0.2f;
+
+    private RectTransform _alertRect;
+    private Coroutine _alertRoutine;
+
+    [Header("Buttons")]
     [SerializeField] private Button speed1Button;
     [SerializeField] private Button speed2Button;
     [SerializeField] private Button speed3Button;
@@ -36,84 +48,180 @@ public class UIController : MonoBehaviour
     [SerializeField] private Color normalTextColor = Color.black;
     [SerializeField] private Color selectedTextColor = Color.white;
 
+    [Header("Panels")]
     [SerializeField] private GameObject pausePanel;
-    private bool _isGamePaused = false;
     [SerializeField] private GameObject gameOverPanel;
-    [SerializeField] private TMP_Text objectiveText;
-
     [SerializeField] private GameObject missionCompletePanel;
-    private bool _missionCompleteSoundPlayed = false;
+
+    [Header("Tower Panel")]
+    [SerializeField] private GameObject towerPanel;
+    [SerializeField] private GameObject towerCardPrefab;
+    [SerializeField] private Transform cardsContainer;
+    [SerializeField] private TowerData[] towers;
+
+    private Platform _currentPlatform;
+    private readonly List<GameObject> activeCards = new();
+
+    [Header("VFX")]
     [SerializeField] private ParticleSystem missionCompleteParticles;
 
+    private UIState _state = UIState.Gameplay;
+    private bool _missionCompleteSoundPlayed;
+
+    #region Unity Lifecycle
+
+    /// <summary>
+    /// Initializes singleton instance and persists across scenes.
+    /// </summary>
     private void Awake()
     {
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
+            return;
         }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
+    /// <summary>
+    /// Subscribes to gameplay events.
+    /// </summary>
     private void OnEnable()
     {
         Spawner.OnWaveChanged += UpdateWaveText;
+        Spawner.OnKillsChanged += UpdateKillsText;
+
         GameManager.OnLivesChanged += UpdateLivesText;
-        GameManager.OnResourcesChanged += UpdateResourcesText;
+        GameManager.OnCoinsChanged += UpdateCoinsText;
+
         Platform.OnPlatformClicked += HandlePlatformClicked;
         TowerCard.OnTowerSelected += HandleTowerSelected;
+
         SceneManager.sceneLoaded += OnSceneLoaded;
         Spawner.OnMissionComplete += ShowMissionComplete;
     }
 
+    /// <summary>
+    /// Unsubscribes from gameplay events.
+    /// </summary>
     private void OnDisable()
     {
         Spawner.OnWaveChanged -= UpdateWaveText;
+        Spawner.OnKillsChanged -= UpdateKillsText;
+
         GameManager.OnLivesChanged -= UpdateLivesText;
-        GameManager.OnResourcesChanged -= UpdateResourcesText;
+        GameManager.OnCoinsChanged -= UpdateCoinsText;
+
         Platform.OnPlatformClicked -= HandlePlatformClicked;
         TowerCard.OnTowerSelected -= HandleTowerSelected;
+
         SceneManager.sceneLoaded -= OnSceneLoaded;
         Spawner.OnMissionComplete -= ShowMissionComplete;
     }
 
+    /// <summary>
+    /// Binds UI button handlers.
+    /// </summary>
     private void Start()
     {
-        speed1Button.onClick.AddListener(() => {
-            SetGameSpeed(0.2f);
-            AudioManager.Instance.PlaySpeedSlow();
-        });
-        speed2Button.onClick.AddListener(() => {
-            SetGameSpeed(1f);
-            AudioManager.Instance.PlaySpeedNormal();
-        });
-        speed3Button.onClick.AddListener(() => {
-            SetGameSpeed(2f);
-            AudioManager.Instance.PlaySpeedFast();
-        });
+        _alertText = alert.GetComponentInChildren<TMP_Text>();
+        _alertRect = alert.GetComponent<RectTransform>();
+        _alertRect.anchoredPosition = new Vector2(_alertRect.anchoredPosition.x, alertHiddenY);
 
-        HighlightSelectedSpeedButton(GameManager.Instance.GameSpeed);
+
+        _livesText = lives.GetComponentInChildren<TMP_Text>();
+        _coinsText = coins.GetComponentInChildren<TMP_Text>();
+
+        _waveText = waves.GetComponentInChildren<TMP_Text>();
+        _killsText = kills.GetComponentInChildren<TMP_Text>();
+
+        BindSpeedButton(speed1Button, GameSpeedMode.Slow, AudioManager.Instance.PlaySpeedSlow);
+        BindSpeedButton(speed2Button, GameSpeedMode.Normal, AudioManager.Instance.PlaySpeedNormal);
+        BindSpeedButton(speed3Button, GameSpeedMode.Fast, AudioManager.Instance.PlaySpeedFast);
+
+        HighlightSelectedSpeedButton(GameSpeed.FromTimeScale(GameManager.Instance.GameSpeed));
     }
 
+    /// <summary>
+    /// Handles pause hotkey (Escape) outside the main menu.
+    /// </summary>
     private void Update()
     {
-        if (Keyboard.current.escapeKey.wasPressedThisFrame && SceneManager.GetActiveScene().name != "MainMenu")
+        if (Keyboard.current.escapeKey.wasPressedThisFrame &&
+            SceneManager.GetActiveScene().name != "MainMenu")
         {
             TogglePause();
         }
     }
 
+    #endregion
+
+    #region Central UI State
+
+    /// <summary>
+    /// Applies a UI state: panel visibility + time scale + flags in one place.
+    /// </summary>
+    private void SetUIState(UIState newState)
+    {
+        if (_state == newState)
+            return;
+
+        _state = newState;
+
+        // Panels
+        if (towerPanel != null) towerPanel.SetActive(newState == UIState.SelectingTower);
+        if (pausePanel != null) pausePanel.SetActive(newState == UIState.Paused);
+        if (missionCompletePanel != null) missionCompletePanel.SetActive(newState == UIState.MissionComplete);
+        if (gameOverPanel != null) gameOverPanel.SetActive(newState == UIState.GameOver);
+
+        // External "panel open" flag (consider removing static later)
+        Platform.towerPanelOpen = (newState == UIState.SelectingTower);
+
+        // Time scale
+        switch (newState)
+        {
+            case UIState.Gameplay:
+                GameManager.Instance.SetTimeScale(GameManager.Instance.GameSpeed);
+                break;
+
+            case UIState.SelectingTower:
+            case UIState.Paused:
+            case UIState.MissionComplete:
+            case UIState.GameOver:
+                GameManager.Instance.SetTimeScale(0f);
+                break;
+        }
+    }
+
+    /// <summary>
+    /// Returns true if gameplay should ignore "pause" input/actions.
+    /// </summary>
+    private bool IsBlockingPause() => _state == UIState.SelectingTower;
+
+    #endregion
+
+    #region HUD Updates
+
     private void UpdateWaveText(int currentWave)
     {
-        waveText.text = $"Wave: {currentWave + 1}";
+        if (_waveText == null) return;
+        _waveText.text = currentWave.ToString();
+    }
+
+    private void UpdateKillsText(int currentKills)
+    {
+        if (_killsText == null) return;
+        _killsText.text = currentKills.ToString();
     }
 
     private void UpdateLivesText(int currentLives)
     {
-        livesText.text = $"Lives: {currentLives}";
+        if (_livesText != null)
+        {
+            _livesText.text = currentLives.ToString();
+        }
 
         if (currentLives <= 0)
         {
@@ -121,10 +229,15 @@ public class UIController : MonoBehaviour
         }
     }
 
-    private void UpdateResourcesText(int currentResources)
+    private void UpdateCoinsText(int currentCoins)
     {
-        resourcesText.text = $"Resources: {currentResources}";
+        if (_coinsText == null) return;
+        _coinsText.text = currentCoins.ToString();
     }
+
+    #endregion
+
+    #region Tower Placement Flow
 
     private void HandlePlatformClicked(Platform platform)
     {
@@ -132,115 +245,215 @@ public class UIController : MonoBehaviour
         ShowTowerPanel();
     }
 
+    /// <summary>
+    /// Opens tower selection and pauses gameplay.
+    /// </summary>
     private void ShowTowerPanel()
     {
-        towerPanel.SetActive(true);
-        Platform.towerPanelOpen = true;
-        GameManager.Instance.SetTimeScale(0f);
         PopulateTowerCards();
+        SetUIState(UIState.SelectingTower);
         AudioManager.Instance.PlayPanelToggle();
     }
 
+    /// <summary>
+    /// Closes tower selection and returns to gameplay.
+    /// </summary>
     public void HideTowerPanel()
     {
-        towerPanel.SetActive(false);
-        Platform.towerPanelOpen = false;
-        GameManager.Instance.SetTimeScale(GameManager.Instance.GameSpeed);
-
+        if (_state == UIState.SelectingTower)
+            SetUIState(UIState.Gameplay);
     }
 
     private void PopulateTowerCards()
     {
-        foreach (var card in activeCards)
-        {
-            Destroy(card);
-        }
-        activeCards.Clear();
+        ClearActiveCards();
+
+        if (towers == null || towerCardPrefab == null || cardsContainer == null)
+            return;
 
         foreach (var data in towers)
         {
-            GameObject cardGameObject = Instantiate(towerCardPrefab, cardsContainer);
-            TowerCard card = cardGameObject.GetComponent<TowerCard>();
+            var cardGO = Instantiate(towerCardPrefab, cardsContainer);
+            var card = cardGO.GetComponent<TowerCard>();
             card.Initialize(data);
-            activeCards.Add(cardGameObject);
+            activeCards.Add(cardGO);
         }
     }
 
     private void HandleTowerSelected(TowerData towerData)
     {
+        if (_currentPlatform == null)
+        {
+            HideTowerPanel();
+            return;
+        }
+
         if (_currentPlatform.transform.childCount > 0)
         {
             HideTowerPanel();
-            StartCoroutine(ShowWarningMessage("This platform already has a tower!"));
+            StartCoroutine(ShowAlert("This platform already has a tower!"));
             return;
         }
-        if (GameManager.Instance.Resources >= towerData.cost)
+
+        if (GameManager.Instance.Coins >= towerData.cost)
         {
             AudioManager.Instance.PlayTowerPlaced();
-            GameManager.Instance.SpendResources(towerData.cost);
+            GameManager.Instance.SpendCoins(towerData.cost);
             _currentPlatform.PlaceTower(towerData);
         }
         else
         {
-            StartCoroutine(ShowWarningMessage("Not enough resources!"));
+            StartCoroutine(ShowAlert("Not enough Coins!"));
         }
 
         HideTowerPanel();
     }
 
-    private IEnumerator ShowWarningMessage(string message)
+    private IEnumerator ShowAlert(string message)
     {
-        warningText.text = message;
-        AudioManager.Instance.PlayWarning();
-        warningText.gameObject.SetActive(true);
-        yield return new WaitForSecondsRealtime(3f);
-        warningText.gameObject.SetActive(false);
+        if (_alertText == null || _alertRect == null) yield break;
+
+        // If alerts are spammed, restart cleanly.
+        if (_alertRoutine != null)
+            StopCoroutine(_alertRoutine);
+
+        _alertRoutine = StartCoroutine(ShowAlertRoutine(message));
+        yield break;
     }
 
-    private void SetGameSpeed(float timeScale)
+    private IEnumerator ShowAlertRoutine(string message)
     {
-        HighlightSelectedSpeedButton(timeScale);
+        _alertText.text = message;
+        AudioManager.Instance.PlayWarning();
+
+        alert.SetActive(true);
+
+        // Start from hidden position every time (prevents mid-animation states)
+        SetAlertY(alertHiddenY);
+
+        // Slide in
+        yield return AnimateAlertY(alertHiddenY, alertShownY, alertOpenTime);
+
+        // Stay visible (real-time, ignores timescale)
+        yield return new WaitForSecondsRealtime(alertDuration);
+
+        // Slide out
+        yield return AnimateAlertY(alertShownY, alertHiddenY, alertCloseTime);
+
+        alert.SetActive(false);
+        _alertRoutine = null;
+    }
+
+    private IEnumerator AnimateAlertY(float fromY, float toY, float duration)
+    {
+        if (duration <= 0f)
+        {
+            SetAlertY(toY);
+            yield break;
+        }
+
+        float t = 0f;
+        while (t < duration)
+        {
+            t += Time.unscaledDeltaTime; // works even when timeScale = 0
+            float lerp = Mathf.Clamp01(t / duration);
+
+            // Smooth step for nicer motion
+            float eased = lerp * lerp * (3f - 2f * lerp);
+
+            float y = Mathf.Lerp(fromY, toY, eased);
+            SetAlertY(y);
+
+            yield return null;
+        }
+
+        SetAlertY(toY);
+    }
+
+    private void SetAlertY(float y)
+    {
+        var pos = _alertRect.anchoredPosition;
+        pos.y = y;
+        _alertRect.anchoredPosition = pos;
+    }
+
+    private void ClearActiveCards()
+    {
+        for (int i = 0; i < activeCards.Count; i++)
+            Destroy(activeCards[i]);
+
+        activeCards.Clear();
+    }
+
+    #endregion
+
+    #region Speed / Pause
+
+    private void BindSpeedButton(Button button, GameSpeedMode mode, Action onSound)
+    {
+        if (button == null) return;
+
+        button.onClick.AddListener(() =>
+        {
+            SetGameSpeed(mode);
+            onSound?.Invoke();
+            SetUIState(UIState.Gameplay);
+        });
+    }
+
+    private void SetGameSpeed(GameSpeedMode mode)
+    {
+        HighlightSelectedSpeedButton(mode);
+
+        float timeScale = GameSpeed.ToTimeScale(mode);
         GameManager.Instance.SetGameSpeed(timeScale);
+
+        // If currently in gameplay, reflect speed immediately.
+        if (_state == UIState.Gameplay)
+            GameManager.Instance.SetTimeScale(GameManager.Instance.GameSpeed);
     }
 
     private void UpdateButtonVisual(Button button, bool isSelected)
     {
+        if (button == null) return;
+
         button.image.color = isSelected ? selectedButtonColor : normalButtonColor;
 
-        TMP_Text text = button.GetComponentInChildren<TMP_Text>();
+        var text = button.GetComponentInChildren<TMP_Text>();
         if (text != null)
-        {
             text.color = isSelected ? selectedTextColor : normalTextColor;
-        }
     }
 
-    private void HighlightSelectedSpeedButton(float selectedSpeed)
+    private void HighlightSelectedSpeedButton(GameSpeedMode mode)
     {
-        UpdateButtonVisual(speed1Button, selectedSpeed == 0.2f);
-        UpdateButtonVisual(speed2Button, selectedSpeed == 1f);
-        UpdateButtonVisual(speed3Button, selectedSpeed == 2f);
+        UpdateButtonVisual(speed1Button, mode == GameSpeedMode.Slow);
+        UpdateButtonVisual(speed2Button, mode == GameSpeedMode.Normal);
+        UpdateButtonVisual(speed3Button, mode == GameSpeedMode.Fast);
     }
 
+    /// <summary>
+    /// Toggles between Paused and Gameplay. Does nothing while selecting a tower.
+    /// </summary>
     public void TogglePause()
     {
-        if (towerPanel.activeSelf)
+        if (IsBlockingPause())
             return;
 
-        if (_isGamePaused)
+        if (_state == UIState.Paused)
         {
-            pausePanel.SetActive(false);
-            _isGamePaused = false;
-            GameManager.Instance.SetTimeScale(GameManager.Instance.GameSpeed);
+            SetUIState(UIState.Gameplay);
             AudioManager.Instance.PlayUnpause();
         }
-        else
+        else if (_state == UIState.Gameplay)
         {
-            pausePanel.SetActive(true);
-            _isGamePaused = true;
-            GameManager.Instance.SetTimeScale(0f);
+            SetUIState(UIState.Paused);
             AudioManager.Instance.PlayPause();
         }
     }
+
+    #endregion
+
+    #region Scene / Game State
 
     public void RestartLevel()
     {
@@ -254,26 +467,31 @@ public class UIController : MonoBehaviour
 
     public void GoToMainMenu()
     {
+        // Going to menu should never be stuck paused.
+        SetUIState(UIState.Gameplay);
         GameManager.Instance.SetTimeScale(1f);
         SceneManager.LoadScene("MainMenu");
     }
 
+    /// <summary>
+    /// Shows game over UI and pauses via state.
+    /// </summary>
     private void ShowGameOver()
     {
-        GameManager.Instance.SetTimeScale(0f);
-        gameOverPanel.SetActive(true);
+        SetUIState(UIState.GameOver);
         AudioManager.Instance.PlayGameOver();
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Camera mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        Canvas canvas = GetComponent<Canvas>();
-        canvas.worldCamera = mainCamera;
+        var canvas = GetComponent<Canvas>();
+        var camGO = GameObject.FindGameObjectWithTag("MainCamera");
 
-        HidePanels();
-        _isGamePaused = false;
+        if (canvas != null && camGO != null && camGO.TryGetComponent(out Camera mainCamera))
+            canvas.worldCamera = mainCamera;
+
         _missionCompleteSoundPlayed = false;
+        SetUIState(UIState.Gameplay);
 
         if (scene.name == "MainMenu")
         {
@@ -282,71 +500,70 @@ public class UIController : MonoBehaviour
         else
         {
             ShowUI();
-            StartCoroutine(ShowObjective());
+            StartCoroutine(ShowAlert($"Defend {LevelManager.Instance.CurrentLevel.wavesToWin} waves!"));
         }
     }
 
-    private IEnumerator ShowObjective()
-    {
-        objectiveText.text = $"Survive {LevelManager.Instance.CurrentLevel.wavesToWin} waves!";
-        objectiveText.gameObject.SetActive(true);
-        yield return new WaitForSeconds(3f);
-        objectiveText.gameObject.SetActive(false);
-    }
-
+    /// <summary>
+    /// Shows mission complete UI once and pauses via state.
+    /// </summary>
     private void ShowMissionComplete()
     {
-        if (!_missionCompleteSoundPlayed)
-        {
-            UpdateNextLevelButton();
-            missionCompletePanel.SetActive(true);
-            GameManager.Instance.SetTimeScale(0f);
-            AudioManager.Instance.PlayMissionComplete();
-            _missionCompleteSoundPlayed = true;
-            missionCompleteParticles.Play();
-        }
+        if (_missionCompleteSoundPlayed)
+            return;
 
+        UpdateNextLevelButton();
+
+        SetUIState(UIState.MissionComplete);
+
+        AudioManager.Instance.PlayMissionComplete();
+        _missionCompleteSoundPlayed = true;
+
+        if (missionCompleteParticles != null)
+            missionCompleteParticles.Play();
     }
 
     public void EnterEndlessMode()
     {
-        missionCompletePanel.SetActive(false);
-        GameManager.Instance.SetTimeScale(GameManager.Instance.GameSpeed);
+        SetUIState(UIState.Gameplay);
         Spawner.Instance.EnableEndlessMode();
     }
 
     private void HideUI()
     {
-        HidePanels();
-        waveText.gameObject.SetActive(false);
-        livesText.gameObject.SetActive(false);
-        resourcesText.gameObject.SetActive(false);
-        warningText.gameObject.SetActive(false);
+        lives.SetActive(false);
+        coins.SetActive(false);
+        waves.SetActive(false);
+        kills.SetActive(false);
+        alert.SetActive(false);
 
-        speed1Button.gameObject.SetActive(false);
-        speed2Button.gameObject.SetActive(false);
-        speed3Button.gameObject.SetActive(false);
-        pauseButton.gameObject.SetActive(false);
+        if (speed1Button != null) speed1Button.gameObject.SetActive(false);
+        if (speed2Button != null) speed2Button.gameObject.SetActive(false);
+        if (speed3Button != null) speed3Button.gameObject.SetActive(false);
+        if (pauseButton != null) pauseButton.gameObject.SetActive(false);
+
+        // Also ensure gameplay panels are off in menu.
+        if (towerPanel != null) towerPanel.SetActive(false);
+        if (pausePanel != null) pausePanel.SetActive(false);
+        if (missionCompletePanel != null) missionCompletePanel.SetActive(false);
+        if (gameOverPanel != null) gameOverPanel.SetActive(false);
     }
 
     private void ShowUI()
     {
-        waveText.gameObject.SetActive(true);
-        livesText.gameObject.SetActive(true);
-        resourcesText.gameObject.SetActive(true);
+        lives.SetActive(true);
+        coins.SetActive(true);
+        waves.SetActive(true);
+        kills.SetActive(true);
 
-        speed1Button.gameObject.SetActive(true);
-        speed2Button.gameObject.SetActive(true);
-        speed3Button.gameObject.SetActive(true);
-        HighlightSelectedSpeedButton(GameManager.Instance.GameSpeed);
-        pauseButton.gameObject.SetActive(true);
-    }
 
-    private void HidePanels()
-    {
-        pausePanel.SetActive(false);
-        gameOverPanel.SetActive(false);
-        missionCompletePanel.SetActive(false);
+        if (speed1Button != null) speed1Button.gameObject.SetActive(true);
+        if (speed2Button != null) speed2Button.gameObject.SetActive(true);
+        if (speed3Button != null) speed3Button.gameObject.SetActive(true);
+
+        HighlightSelectedSpeedButton(GameSpeed.FromTimeScale(GameManager.Instance.GameSpeed));
+
+        if (pauseButton != null) pauseButton.gameObject.SetActive(true);
     }
 
     public void LoadNextLevel()
@@ -354,16 +571,42 @@ public class UIController : MonoBehaviour
         var levelManager = LevelManager.Instance;
         int currentIndex = Array.IndexOf(levelManager.allLevels, levelManager.CurrentLevel);
         int nextIndex = currentIndex + 1;
+
         if (nextIndex < levelManager.allLevels.Length)
-        {
             levelManager.LoadLevel(levelManager.allLevels[nextIndex]);
-        }
     }
 
     private void UpdateNextLevelButton()
     {
+        if (nextLevelButton == null) return;
+
         var levelManager = LevelManager.Instance;
         int currentIndex = Array.IndexOf(levelManager.allLevels, levelManager.CurrentLevel);
+
         nextLevelButton.interactable = currentIndex + 1 < levelManager.allLevels.Length;
+    }
+
+    #endregion
+
+    private static class GameSpeed
+    {
+        public const float Slow = 0.2f;
+        public const float Normal = 1f;
+        public const float Fast = 2f;
+
+        public static float ToTimeScale(GameSpeedMode mode) => mode switch
+        {
+            GameSpeedMode.Slow => Slow,
+            GameSpeedMode.Normal => Normal,
+            GameSpeedMode.Fast => Fast,
+            _ => Normal
+        };
+
+        public static GameSpeedMode FromTimeScale(float timeScale)
+        {
+            if (Mathf.Approximately(timeScale, Slow)) return GameSpeedMode.Slow;
+            if (Mathf.Approximately(timeScale, Fast)) return GameSpeedMode.Fast;
+            return GameSpeedMode.Normal;
+        }
     }
 }

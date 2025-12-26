@@ -5,7 +5,7 @@ public class LevelData : ScriptableObject
 {
     public string levelName; // match a scene name
     public int wavesToWin;
-    public int startingResources;
+    public int startingCoins;
     public int startingLives;
 
     public Vector2 initialSpawnPosition;

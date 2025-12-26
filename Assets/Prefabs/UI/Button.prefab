@@ -103,6 +103,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -248,9 +249,9 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.54905653, g: 0.73941505, b: 1, a: 1}
-    m_PressedColor: {r: 0.20943397, g: 0.5297619, b: 1, a: 1}
-    m_SelectedColor: {r: 0.28749725, g: 0.47522724, b: 0.5622641, a: 1}
+    m_HighlightedColor: {r: 0, g: 0.6509804, b: 1, a: 1}
+    m_PressedColor: {r: 0.043387346, g: 0.47574243, b: 0.7075472, a: 1}
+    m_SelectedColor: {r: 0.36320752, g: 0.777747, b: 1, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1

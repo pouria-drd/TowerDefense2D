@@ -8,11 +8,18 @@ public class Spawner : MonoBehaviour
     public static Spawner Instance { get; private set; }
 
     public static event Action<int> OnWaveChanged;
+    public static event Action<int> OnKillsChanged;
+
+
     public static event Action OnMissionComplete;
 
     private WaveData[] _waves => LevelManager.Instance.CurrentLevel.waves;
-    private int _currentWaveIndex = 0;
+
+    private int _kills = 0;
+    public int Kills => _kills;
+
     private int _waveCounter = 0;
+    private int _currentWaveIndex = 0;
     private WaveData CurrentWave => _waves[_currentWaveIndex];
 
     private float _spawnTimer;
@@ -149,6 +156,8 @@ public class Spawner : MonoBehaviour
     private void HandleEnemyDestroyed(Enemy enemy)
     {
         _enemiesRemoved++;
+        _kills++;
+        OnKillsChanged?.Invoke(_kills);
     }
 
     public void EnableEndlessMode()
@@ -182,6 +191,9 @@ public class Spawner : MonoBehaviour
         _spawnTimer = 0f;
         _isBetweenWaves = false;
         _isEndlessMode = false;
+
+        _kills = 0;
+        OnKillsChanged?.Invoke(_kills);
 
         foreach (var pool in _poolDictionary.Values)
         {
