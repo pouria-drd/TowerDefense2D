@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lives: 5
   damage: 3
-  minSpeed: 1.2
-  maxSpeed: 1.5
-  resourceReward: 2
+  minSpeed: 0.75
+  maxSpeed: 1.25
+  coinReward: 10
+  offsetX: 0.6
+  offsetY: 0.6

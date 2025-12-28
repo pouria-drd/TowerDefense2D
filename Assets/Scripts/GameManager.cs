@@ -55,15 +55,15 @@ public class GameManager : MonoBehaviour
         OnCoinsChanged?.Invoke(_coins);
     }
 
-    private void HandleEnemyReachedEnd(EnemyData data)
+    private void HandleEnemyReachedEnd(EnemyData data, int damage)
     {
-        _lives = Mathf.Max(0, _lives - data.damage);
+        _lives = Mathf.Max(0, _lives - damage);
         OnLivesChanged?.Invoke(_lives);
     }
 
-    private void HandleEnemyDestroyed(Enemy enemy)
+    private void HandleEnemyDestroyed(Enemy enemy, float reward)
     {
-        AddCoins(Mathf.RoundToInt(enemy.Data.resourceReward));
+        AddCoins(Mathf.RoundToInt(reward));
     }
 
     private void AddCoins(int amount)

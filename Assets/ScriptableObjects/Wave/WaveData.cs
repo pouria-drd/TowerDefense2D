@@ -4,7 +4,7 @@ using UnityEngine;
 public class WaveData : ScriptableObject
 {
     public EnemyType enemyType;
-    public float spawnInterval;
-    public int enemiesPerWave;
+    [Range(0f, 10f)] public float spawnInterval;
+    [Range(1, 100)] public int enemiesPerWave;
     public AudioClip waveSpawnClip;
 }

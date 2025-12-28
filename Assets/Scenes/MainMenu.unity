@@ -3016,7 +3016,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11.25
+  orthographic size: 8.4375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7577,7 +7577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 632ea8200d298b84d8158ff816a85693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3856578756706975724, guid: 4285716f71e397f4a89b7a812aa56d54, type: 3}
+  prefab: {fileID: 3856578756706975724, guid: 875f902a0a1b789459890bc780409104, type: 3}
   poolSize: 5
 --- !u!4 &462741118
 Transform:
@@ -11289,7 +11289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 632ea8200d298b84d8158ff816a85693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3856578756706975724, guid: 2939b6b37f913044c910c97f66b0f1a3, type: 3}
+  prefab: {fileID: 3856578756706975724, guid: d81c8c05b640a9a41a49e1b34e9739b2, type: 3}
   poolSize: 5
 --- !u!4 &1052898405
 Transform:
@@ -18454,7 +18454,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: 28
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3e82deabbac3964b84bf0b1d64a132d, type: 2}
   m_sharedMaterial: {fileID: -6812617953544254077, guid: b3e82deabbac3964b84bf0b1d64a132d, type: 2}
@@ -18520,7 +18520,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -8.223175}
+  m_margin: {x: -7.7667847, y: 0, z: 0, w: -8.223175}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -19355,6 +19355,52 @@ RectTransform:
   m_AnchoredPosition: {x: 50, y: -290}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1578357859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1578357860}
+  - component: {fileID: 1578357861}
+  m_Layer: 0
+  m_Name: TanGoblinPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1578357860
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578357859}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 8.12, y: -0.73, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2015952778}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1578357861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1578357859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 632ea8200d298b84d8158ff816a85693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3856578756706975724, guid: 8e7824c83260c5a459df036a40b1127d, type: 3}
+  poolSize: 5
 --- !u!1 &1607195985
 GameObject:
   m_ObjectHideFlags: 0
@@ -36790,7 +36836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 632ea8200d298b84d8158ff816a85693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 3856578756706975724, guid: 3c3f9e0511a311544901e354aecedf0a, type: 3}
+  prefab: {fileID: 3856578756706975724, guid: f832afdd307c4654482d2adf42cc7239, type: 3}
   poolSize: 5
 --- !u!4 &1985934182
 Transform:
@@ -37054,14 +37100,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cd50bf46cbc0147ab70c6d15cd70a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waveMultiplier: 0.4
   orcPool: {fileID: 1985934181}
   dragonPool: {fileID: 462741117}
   kaijuPool: {fileID: 1052898404}
-  fairyOrcPool: {fileID: 2088663785}
-  pixieZombiePool: {fileID: 384117220}
+  tanGoblinPool: {fileID: 1578357861}
   mummyOrcPool: {fileID: 879229348}
-  wingedRabbitPool: {fileID: 53934916}
+  fairyOrcPool: {fileID: 2088663785}
   vampirePool: {fileID: 828252238}
+  pixieZombiePool: {fileID: 384117220}
+  wingedRabbitPool: {fileID: 53934916}
 --- !u!4 &2015952778
 Transform:
   m_ObjectHideFlags: 0
@@ -37076,6 +37124,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1985934182}
+  - {fileID: 1578357860}
   - {fileID: 2088663786}
   - {fileID: 828252237}
   - {fileID: 879229349}

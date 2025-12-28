@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8a038efccd1cf4dac95b1f499f1cad, type: 3}
   m_Name: Enemy_MummyOrc
   m_EditorClassIdentifier: 
-  lives: 5
-  damage: 2
+  lives: 1
+  damage: 1
   minSpeed: 1.2
   maxSpeed: 2
-  resourceReward: 2
+  coinReward: 5
+  offsetX: 0.75
+  offsetY: 0.5

@@ -4,6 +4,7 @@ public enum EnemyType
     Dragon,
     Kaiju,
     FairyOrc,
+    TanGoblin,
     PixieZombie,
     MummyOrc,
     WingedRabbit,

@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Enemy_WingedRabbit
   m_EditorClassIdentifier: 
   lives: 12
-  damage: 7
-  minSpeed: 2
-  maxSpeed: 3
-  resourceReward: 5
+  damage: 9
+  minSpeed: 2.5
+  maxSpeed: 3.5
+  coinReward: 15
+  offsetX: 0.8
+  offsetY: 0.6

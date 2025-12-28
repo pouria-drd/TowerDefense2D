@@ -16,4 +16,6 @@ MonoBehaviour:
   damage: 1
   minSpeed: 1.5
   maxSpeed: 2
-  resourceReward: 2
+  coinReward: 1
+  offsetX: 0.5
+  offsetY: 0.5

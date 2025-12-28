@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: FairyOrcWave
   m_EditorClassIdentifier: 
   enemyType: 3
-  spawnInterval: 1.5
-  enemiesPerWave: 5
+  spawnInterval: 2.25
+  enemiesPerWave: 7
   waveSpawnClip: {fileID: 8300000, guid: bd00eda7c3292fc489957748ebdfcc75, type: 3}

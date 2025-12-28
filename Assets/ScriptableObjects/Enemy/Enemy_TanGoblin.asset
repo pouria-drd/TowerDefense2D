@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Enemy_TanGoblin
   m_EditorClassIdentifier: 
   lives: 2
-  damage: 1
+  damage: 2
   minSpeed: 1.5
   maxSpeed: 2
-  resourceReward: 1
+  coinReward: 10
+  offsetX: 0.6
+  offsetY: 0.5

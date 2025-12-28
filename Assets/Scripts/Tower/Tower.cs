@@ -86,7 +86,7 @@ public class Tower : MonoBehaviour
         }
     }
 
-    private void HandleEnemyDestroyed(Enemy enemy)
+    private void HandleEnemyDestroyed(Enemy enemy, float reward)
     {
         _enemiesInRange.Remove(enemy);
     }

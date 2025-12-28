@@ -6,18 +6,20 @@ public class Enemy : MonoBehaviour
     [SerializeField] private EnemyData data;
     public EnemyData Data => data;
 
-    public static event Action<EnemyData> OnEnemyReachedEnd;
-    public static event Action<Enemy> OnEnemyDestroyed;
+    public static event Action<EnemyData, int> OnEnemyReachedEnd;
+    public static event Action<Enemy, float> OnEnemyDestroyed;
 
     private Path _currentPath;
     private Vector3 _targetPosition;
-    public Vector3 CurrentTargetPosition => _targetPosition; 
+    public Vector3 CurrentTargetPosition => _targetPosition;
     private int _currentWaypoint;
     private Vector3 _offset;
 
-    private float _lives;
-    private float _maxLives;
+    private int _damge;
     private float _speed;
+    private float _lives;
+    private float _reward;
+    private float _maxLives;
 
     [SerializeField] private Transform healthBar;
     private Vector3 _healthBarOriginalScale;
@@ -29,12 +31,12 @@ public class Enemy : MonoBehaviour
         _healthBarOriginalScale = healthBar.localScale;
     }
 
-    private void OnEnable()
+    private void Update()
     {
-
+        Move();
     }
 
-    void Update()
+    private void Move()
     {
         if (_hasBeenCounted) return;
 
@@ -53,7 +55,7 @@ public class Enemy : MonoBehaviour
             else // reached last waypoint
             {
                 _hasBeenCounted = true;
-                OnEnemyReachedEnd?.Invoke(data);
+                OnEnemyReachedEnd?.Invoke(data, _damge);
                 gameObject.SetActive(false);
             }
         }
@@ -71,7 +73,7 @@ public class Enemy : MonoBehaviour
         {
             AudioManager.Instance.PlayEnemyDestroyed();
             _hasBeenCounted = true;
-            OnEnemyDestroyed?.Invoke(this);
+            OnEnemyDestroyed?.Invoke(this, _reward);
             gameObject.SetActive(false);
         }
     }
@@ -84,19 +86,26 @@ public class Enemy : MonoBehaviour
         healthBar.localScale = scale;
     }
 
-    public void Initialize(Path path, float healthMultiplier)
+    public void Initialize(Path path, float waveMultiplier)
     {
         _currentPath = path;
         _currentWaypoint = 0;
+
         _targetPosition = _currentPath.GetPosition(_currentWaypoint) + _offset;
         _hasBeenCounted = false;
-        _maxLives = data.lives * healthMultiplier;
+
+        _maxLives = data.lives * waveMultiplier;
         _lives = _maxLives;
         UpdateHealthBar();
+
+        _damge = Mathf.RoundToInt(data.damage * waveMultiplier);
+
+        _reward = data.coinReward * waveMultiplier;
+
         _speed = UnityEngine.Random.Range(data.minSpeed, data.maxSpeed);
 
-        float offsetX = UnityEngine.Random.Range(-0.5f, 0.5f);
-        float offsetY = UnityEngine.Random.Range(-0.5f, 0.5f);
+        float offsetX = UnityEngine.Random.Range(-data.offsetX, data.offsetX);
+        float offsetY = UnityEngine.Random.Range(-data.offsetY, data.offsetY);
         _offset = new Vector2(offsetX, offsetY);
     }
 }

@@ -5,6 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class Spawner : MonoBehaviour
 {
+    [Header("Settings")]
+    [SerializeField]
+    [Range(0.1f, 1f)]
+    [Tooltip("+X% per wave (increases Diffculty")]
+    private float waveMultiplier = 0.4f;
+
+    [Header("Pools")]
+    [Header("Base")]
+    [SerializeField] private ObjectPooler orcPool;
+    [SerializeField] private ObjectPooler dragonPool;
+    [SerializeField] private ObjectPooler kaijuPool;
+    [Header("Main")]
+    [SerializeField] private ObjectPooler tanGoblinPool;
+    [SerializeField] private ObjectPooler mummyOrcPool;
+    [SerializeField] private ObjectPooler fairyOrcPool;
+    [SerializeField] private ObjectPooler vampirePool;
+    [SerializeField] private ObjectPooler pixieZombiePool;
+    [SerializeField] private ObjectPooler wingedRabbitPool;
+
+
     public static Spawner Instance { get; private set; }
 
     public static event Action<int> OnWaveChanged;
@@ -26,15 +46,6 @@ public class Spawner : MonoBehaviour
     private float _spawnCounter;
     private int _enemiesRemoved;
 
-    [SerializeField] private ObjectPooler orcPool;
-    [SerializeField] private ObjectPooler dragonPool;
-    [SerializeField] private ObjectPooler kaijuPool;
-    [SerializeField] private ObjectPooler fairyOrcPool;
-    [SerializeField] private ObjectPooler pixieZombiePool;
-    [SerializeField] private ObjectPooler mummyOrcPool;
-    [SerializeField] private ObjectPooler wingedRabbitPool;
-    [SerializeField] private ObjectPooler vampirePool;
-
 
     private Dictionary<EnemyType, ObjectPooler> _poolDictionary;
 
@@ -53,11 +64,12 @@ public class Spawner : MonoBehaviour
             { EnemyType.Orc, orcPool},
             { EnemyType.Dragon, dragonPool},
             { EnemyType.Kaiju, kaijuPool},
-            { EnemyType.FairyOrc, fairyOrcPool},
-            { EnemyType.PixieZombie, pixieZombiePool},
+            { EnemyType.TanGoblin, tanGoblinPool},
             { EnemyType.MummyOrc, mummyOrcPool},
+            { EnemyType.FairyOrc, fairyOrcPool},
+            { EnemyType.Vampire, vampirePool},
+            { EnemyType.PixieZombie, pixieZombiePool},
             { EnemyType.WingedRabbit, wingedRabbitPool},
-            { EnemyType.Vampire, vampirePool}
         };
 
         if (Instance != null && Instance != this)
@@ -140,7 +152,7 @@ public class Spawner : MonoBehaviour
             GameObject spawnedObject = pool.GetPooledObject();
             spawnedObject.transform.position = transform.position;
 
-            float healthMultiplier = 1f + (_waveCounter * 0.4f); // +40% per wave
+            float healthMultiplier = 1f + (_waveCounter * waveMultiplier);
             Enemy enemy = spawnedObject.GetComponent<Enemy>();
             enemy.Initialize(_currentPath, healthMultiplier);
 
@@ -148,12 +160,12 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    private void HandleEnemyReachedEnd(EnemyData data)
+    private void HandleEnemyReachedEnd(EnemyData data, int damage)
     {
         _enemiesRemoved++;
     }
 
-    private void HandleEnemyDestroyed(Enemy enemy)
+    private void HandleEnemyDestroyed(Enemy enemy, float reward)
     {
         _enemiesRemoved++;
         _kills++;
