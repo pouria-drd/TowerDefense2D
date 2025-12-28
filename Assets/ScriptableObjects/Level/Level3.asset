@@ -13,14 +13,16 @@ MonoBehaviour:
   m_Name: Level3
   m_EditorClassIdentifier: 
   levelName: Level3
-  wavesToWin: 10
-  startingCoins: 700
+  wavesToWin: 8
+  startingCoins: 750
   startingLives: 15
   initialSpawnPosition: {x: -26, y: 3.5}
   waves:
-  - {fileID: 11400000, guid: c45573ad8a9b56c44a094f0bc0778dee, type: 2}
-  - {fileID: 11400000, guid: 4eddf69d0ef919b41b34ab22f402d4ac, type: 2}
-  - {fileID: 11400000, guid: 0572f90d0394b6e4182055b21f6d5b82, type: 2}
-  - {fileID: 11400000, guid: 141533fdff9752d4da03191f7b3b65ec, type: 2}
-  - {fileID: 11400000, guid: 0434979d1ada4894494145728b81b506, type: 2}
   - {fileID: 11400000, guid: 724fca7d088a7164e893280611ad1d16, type: 2}
+  - {fileID: 11400000, guid: c45573ad8a9b56c44a094f0bc0778dee, type: 2}
+  - {fileID: 11400000, guid: 141533fdff9752d4da03191f7b3b65ec, type: 2}
+  - {fileID: 11400000, guid: 4eddf69d0ef919b41b34ab22f402d4ac, type: 2}
+  - {fileID: 11400000, guid: 0434979d1ada4894494145728b81b506, type: 2}
+  - {fileID: 11400000, guid: 0572f90d0394b6e4182055b21f6d5b82, type: 2}
+  - {fileID: 11400000, guid: 724fca7d088a7164e893280611ad1d16, type: 2}
+  - {fileID: 11400000, guid: c45573ad8a9b56c44a094f0bc0778dee, type: 2}

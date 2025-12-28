@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 3.5
   shootInterval: 0.7
-  projectileSpeed: 10
-  projectileDuration: 2
+  projectileSpeed: 8
+  projectileDuration: 2.5
   projectileSize: 1
   damage: 1
   cost: 50

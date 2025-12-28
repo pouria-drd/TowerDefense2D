@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 3
   shootInterval: 1
-  projectileSpeed: 4
-  projectileDuration: 3
-  projectileSize: 2.2
+  projectileSpeed: 5
+  projectileDuration: 3.5
+  projectileSize: 1.75
   damage: 10
   cost: 100
   sprite: {fileID: 1704872509302500955, guid: 7bfe6a25fb4acce4c80306cfa19976bc, type: 3}
